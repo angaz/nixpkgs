@@ -11,12 +11,12 @@
 
 buildPythonPackage rec {
   pname = "crate";
-  version = "0.26.0";
+  version = "0.27.1";
   disabled = !isPy3k;
 
   src = fetchPypi {
     inherit pname version;
-    sha256 = "6f650c2efe250b89bf35f8fe3211eb37ebc8d76f7a9c09bd73db3076708fa2fc";
+    sha256 = "sha256-YYzn13yaTTVt4mxbE8wbymGrisraMRRHodydawSy/Uc=";
   };
 
   propagatedBuildInputs = [
