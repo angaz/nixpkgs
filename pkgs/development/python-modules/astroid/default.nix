@@ -16,15 +16,15 @@
 
 buildPythonPackage rec {
   pname = "astroid";
-  version = "2.11.7"; # Check whether the version is compatible with pylint
+  version = "2.12.2"; # Check whether the version is compatible with pylint
 
   disabled = pythonOlder "3.6.2";
 
   src = fetchFromGitHub {
     owner = "PyCQA";
     repo = pname;
-    rev = "v${version}";
-    sha256 = "sha256-HpniGxKf+daMh/sxP9T9UriYRrUFWqk7kDa8r+EqtVI=";
+    rev = "refs/tags/v${version}";
+    sha256 = "sha256-SDhr54jCQ8NLj4LqcyBM/AplXuy5N41/EXZfXArYg3c=";
   };
 
   SETUPTOOLS_SCM_PRETEND_VERSION = version;
