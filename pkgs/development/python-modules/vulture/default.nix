@@ -8,14 +8,14 @@
 
 buildPythonPackage rec {
   pname = "vulture";
-  version = "2.4";
+  version = "2.5";
   format = "setuptools";
 
   disabled = pythonOlder "3.6";
 
   src = fetchPypi {
     inherit pname version;
-    hash = "sha256-gZQ5KUp2tOC44Ixw11VlqM49wfbgNVjtEjpfK7c3wOo=";
+    hash = "sha256-KDFpQFXrLjagnDt2gJNINxArm2wJaSBuOQLVE2Ehd8M=";
   };
 
   postPatch = ''
