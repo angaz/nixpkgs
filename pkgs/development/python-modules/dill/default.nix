@@ -7,14 +7,14 @@
 
 buildPythonPackage rec {
   pname = "dill";
-  version = "0.3.4";
+  version = "0.3.5.1";
   doCheck = !isPy27;
 
   src = fetchFromGitHub {
     owner = "uqfoundation";
     repo = pname;
-    rev = "${pname}-${version}";
-    sha256 = "0x702gh50wb3n820p2p9w49cn4a354y207pllwc7snfxprv6hypm";
+    rev = "refs/tags/dill-${version}";
+    sha256 = "sha256-gWE7aQodblgHjUqGAzOJGgxJ4qx9wHo/DU4KRE6JMWo=";
   };
 
   checkInputs = [
