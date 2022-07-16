@@ -1085,6 +1085,8 @@ let
       inherit (pkgs) unzip;
     };
 
+    opam2json = callPackage ../development/tools/ocaml/opam2json { };
+
     opium = callPackage ../development/ocaml-modules/opium { };
 
     opium_kernel = callPackage ../development/ocaml-modules/opium_kernel { };
