@@ -5,13 +5,13 @@
 
 buildPythonPackage rec {
   pname = "python-dbusmock";
-  version = "0.26.1";
+  version = "0.28.1";
 
   src = fetchFromGitHub {
     owner = "martinpitt";
     repo = pname;
-    rev = version;
-    sha256 = "sha256-kavbWMTgKU/rBIo7RMs9NkwReYQyEdeFwMBSzEM9wa0=";
+    rev = "refs/tags/${version}";
+    sha256 = "sha256-r4WAMj+ROrFHJ5kcZ32mArI9+tYakKgIcEgDcD0hTFo=";
   };
 
   prePatch = ''
